@@ -1,0 +1,57 @@
+@media only screen and (max-width: 600px) {
+  .about p {
+    margin-top: 0em;
+  }
+}
+
+
+.section {
+  min-height: 850px;
+}
+
+.hero-back-left, .hero-back-right {
+  min-height: 850px;
+  background-image: url("../img/cam.jpg");
+  background-size: cover;
+}
+
+.hero-back-left {
+  background-position: center;
+}
+
+.hero-back-right {
+  background-position: right center;
+}
+
+.about {
+  min-height: 850px;
+  background-color: rgb(232,111,99);
+}
+
+.about img {
+  border: 1em #fff solid;
+  border-bottom: 0em;
+}
+
+.about-items {
+  width: 468px;
+  background-color: #fff;
+  height: 5em;
+}
+
+.about-items h1 {
+  margin: 0 auto;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.about p{
+  margin-top: 5em;
+  font-size: 1.4em;
+  color: #364D5E;
+}
+
+.sm-icons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+}
