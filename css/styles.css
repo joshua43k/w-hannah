@@ -21,19 +21,17 @@
   background-color: rgb(232,111,99);
 }
 
-.fade
+.fade-in, .fade-out {
+  width: 31.5em;
+  height: 31.5em;
+}
 
 .fade-out {
   background-color: #000;
-  width: 31.5em;
-  height: 31.5em;
-  transition: 5s;
 }
 
 .fade-in {
   background-color: rgba(255,255,255,0);
-  width: 31.5em;
-  height: 31.5em;
   transition: 5s;
 }
 .img-h {
@@ -98,6 +96,11 @@
     display: none;
   }
 
+  .fade-in, .fade-out {
+    width: 18.5em;
+    height: 18.5em;
+  }
+
   .img-h {
     width: 20.5em;
     height: 20.5em;
@@ -110,4 +113,6 @@
   .about-text p {
     margin-top: 3em;
   }
+
+
 }
