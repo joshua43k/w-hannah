@@ -1,14 +1,21 @@
-let aboutH1 = document.querySelector('#about_h1');
-let fullName = 'Hannah. Gonzalez';
-let i = 0;
-let speed = 150;
+const aboutH1 = document.querySelector('#about_h1');
+const aboutImg = document.querySelector('#about_img');
+const aboutFullName = 'Hannah. Gonzalez';
+let aboutInd = 0;
+let aboutSpeed = 150;
 
 function typeName() {
-  if (i < fullName.length) {
-    aboutH1.innerHTML += fullName.charAt(i);
-    i++
-    setTimeout(typeName, speed);
+  if (aboutInd < aboutFullName.length) {
+    aboutH1.innerHTML += aboutFullName.charAt(aboutInd);
+    aboutInd++;
+    setTimeout(typeName, aboutSpeed);
   }
 }
 
-typeName()
+function fadeIn(){
+  aboutImg.classList.remove('fade-out');
+  aboutImg.classList.add('fade-in');
+}
+
+fadeIn()
+typeName();
