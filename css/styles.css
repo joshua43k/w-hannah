@@ -2,6 +2,10 @@
   min-height: 850px;
 }
 
+.pad {
+  padding: 5em;
+}
+
 .hero-back-left, .hero-back-right {
   min-height: 850px;
   background-image: url("../img/cam.jpg");
@@ -17,8 +21,16 @@
 }
 
 .about {
-  min-height: 850px;
+  min-height: 700px;
   background-color: rgb(232,111,99);
+}
+
+.video {
+  background: #4985BB;
+}
+
+.video iframe{
+  border-radius: 5%;
 }
 
 .fade-in, .fade-out {
@@ -34,7 +46,9 @@
   background-color: rgba(255,255,255,0);
   transition: 5s;
 }
+
 .img-h {
+  padding-top: 5%;
   width: 33.5em;
   height: 33.5em;
   border: 1em solid #fff;
@@ -79,15 +93,34 @@
   color: #4985BB;
   transition: .5s;
 }
+
 /* !MAIN! */
-.ivid {
-  padding:56.25% 0 0 0;
-  position:relative;
+
+.tabs li{
+  width: 25%;
+  background-color: #364D5E;
 }
 
-.ivid iframe {
-  width: 100%;
-  height: 500px; 
+.tabs li a {
+  color: rgb(232, 111, 99);
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+   .nav-tabs>li.active>a:hover {
+  background-color: rgb(232, 111, 99);
+  color: #364D5E;
+}
+
+.tabs li a:hover, tabs li:hover {
+  color: #364D5E;
+  background-color: rgb(232, 111, 99);
+}
+
+/*!MAIN!/MEDAI TAB*/
+.vimeo-embed {
+  width: "640"; 
+  height: "360";
 }
 
 @media only screen and (max-width: 600px) {
